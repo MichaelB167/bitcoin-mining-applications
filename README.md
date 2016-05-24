@@ -2,9 +2,9 @@
 
 # Bitcoin Mining Applications
 
-Everyone has heard of bitcoin and some of you have probably made transactions with it, perhaps as a payment method or a speculative investment.
+Everyone has heard of bitcoin and some of you have probably made transactions using it, maybe as a payment method or a speculative investment.
 
-About a year ago, I was talking with a friend and trying to explain why I  felt confident investing a retrospectively dumb percentage of my net worth in it.  I understood the basic principles of how it operated as a digital currency, but as I tried explaining even the basics of encryption and the mining process all that was coming out was the bitcoin equivalent of 'webscale brah'.
+About a year ago, I was talking with a friend and trying to explain why I felt confident having myself invested in it.  I understood the basic principles of how it operated as a digital currency, but as I tried explaining even the basics of encryption and the mining process all that was coming out was the bitcoin equivalent of 'webscale brah'.
 
 This talk will succinctly compile the bits and pieces I've learned since then to answer the above, as well as go into a bit more detail on how bitcoin relates to subjects we've covered in class such as cs data structures and network funcionality.
 
@@ -17,18 +17,25 @@ By the end of this, developers should:
 -   Be able to mine sample bitcoins via the command line in a sandbox p2p environment.
 -   Hopefully not be on an NSA watchlist or have inadvertently committed any cyber crimes.
 
-## Preparation
+## Bitcoin Cliffs
 
-1.  Please [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-    this repository.
+Bitcoin was invented by a person with the pseudonym Satoshi Nakamoto as a way to mitigate fraud in online transactions.  They postulated that the current system of relying on financial institutions as third parties to process transactions is risky because it introduces a significant need for trust between parties.  Bitcoin instead allows two parties to interact directly with each other based on cryptographic proof and records transactions in a public ledger called the 'block chain' which we'll cover momentarily.
 
-## Bitcoin Basics
+Their vision has only been partially achieved.  Bitcoin's proponents will note that its value has increased from pennies in 2012 to ~450 USD today and currently averages ~250k transactions/day.
 
-Bitcoin was invented by a man named Satoshi Nakamoto as a way to mitigate fraud in online transactions.  He postulated that the current system of relying on financial institutions as third parties to process transactions is risky because it introduces a significant need for trust between parties.  Bitcoin instead allows two parties to interact directly with each other based on cryptographic proof
+However, the same fasciliation of near total anonymity and authentication standards that made Bitcoin successful have made it a target for crime.  The most well-known cases are probably its fascilitation of a wide variety of illegal transactions on Silk Road and the disappearance of hundreds of millions of dollars worth of Bitcoin from the servers of an exchange called Mt Gox run by this super trustworthy looking guy:
 
-<img src="http://www.toledoblade.com/image/2014/02/28/800x_b1_cCM_z_cT/Japan-Bitcoin.jpg">
+<img src="http://i.imgur.com/DIWlCuJ.png?1">
+
+In short, Bitcoin has a brief but wildly varied history.  Further exploring the merits of bitcoin and predicting its future are fascinating but lengthy discussions.  For our applications, let's dive under the hood to explore the software that drives bitcoin production.
+
+
 
 <img src="https://j.gifs.com/pYPmAr.gif">
+
+## What's the Blockchain?
+
+
 
 ## Demo: Write a Demo
 
