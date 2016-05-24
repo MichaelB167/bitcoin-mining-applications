@@ -2,56 +2,33 @@
 
 # Bitcoin Mining Applications
 
-Use this template to structure your READMEs for talks. Remove text from this
-section, or use it to frame the talk you are giving. Good framing answers the
-question "Why am I learning this?".
+Everyone has heard of bitcoin and some of you have probably made transactions with it, perhaps as a payment method or a speculative investment.
 
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
+About a year ago, I was talking with a friend and trying to explain why I  felt confident investing a retrospectively dumb percentage of my net worth in it.  I understood the basic principles of how it operated as a digital currency, but as I tried explaining even the basics of encryption and the mining process all that was coming out was the bitcoin equivalent of 'webscale brah'.
 
-## Prerequisites
-
--   Topics with which developers should be familiar with.
--   Prerequisites are "just-in-time", so if I have a prerequisite that mentions
-    Sass, I would **not** need to include CSS as a prerequisite.
--   [Links to previous materials](https://www.github.com/ga-wdi-boston/example)
-    are often useful.
+This talk will succinctly compile the bits and pieces I've learned since then to answer the above, as well as go into a bit more detail on how bitcoin relates to subjects we've covered in class such as cs data structures and network funcionality.
 
 ## Objectives
 
-By the end of this, developers should be able to:
+By the end of this, developers should:
 
--   Write objectives that focus on demonstrating knowledge.
--   Write learning objectives that begin with an [imperative
-    verb](https://en.wikipedia.org/wiki/Imperative_mood).
--   Avoid objectives that start with "Use" or "Understand".
--   Rewrite objecives that begin with "Use" by inverting sentence structure.
--   End each objective with a period.
--   Write objectives on the whiteboard so they can be referenced during a talk.
+-   Understand the basic principles of cryptocurrencies and more specifically bitcoin.
+-   See parallels between bitcoin mining networks and cs data structures that we've seen in class
+-   Be able to mine sample bitcoins via the command line in a sandbox p2p environment.
+-   Hopefully not be on an NSA watchlist or have inadvertently committed any cyber crimes.
 
 ## Preparation
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+1.  Please [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
-1.  Install dependencies with `npm install`.
 
-Better preparation instructions may be found as
-[snippets](https://github.com/ga-wdi-boston/instructors/tree/master/snippets).
+## Bitcoin Basics
 
-It's a good idea to have students do these steps while you're writing objectives
-on the whiteboard.
+Bitcoin was invented by a man named Satoshi Nakamoto as a way to mitigate fraud in online transactions.  He postulated that the current system of relying on financial institutions as third parties to process transactions is risky because it introduces a significant need for trust between parties.  Bitcoin instead allows two parties to interact directly with each other based on cryptographic proof
 
-## Leading Topic Heading
+<img src="http://www.toledoblade.com/image/2014/02/28/800x_b1_cCM_z_cT/Japan-Bitcoin.jpg">
 
-Here is where the talk begins. If you have not already included framing above,
-it's appropriate to put it here. Link to introductory articles or documentation.
-Motivate the next section.
-
-Demos, exercises, and labs are labelled as such, followed by a colon and a
-description of the activity starting with an [imperative
-verb](https://en.wikipedia.org/wiki/Imperative_mood).
+<img src="https://j.gifs.com/pYPmAr.gif">
 
 ## Demo: Write a Demo
 
@@ -89,6 +66,8 @@ consultant support is available.
 Labs correspond to the "You do" portion of scaffolding from consultant
 trainging.
 
+## TL;DR
+
 ## Additional Resources
 
 -   Any useful links should be included in the talk material where the link is
@@ -98,6 +77,8 @@ trainging.
 -   Links to important parts of documentation not covered during the talk, or
     tools tangentially used but not part of the focus of the talk, are also
     appropriate.
+
+[^fn-sample_footnote]: Handy! Now click the return link to go back.
 
 ## [License](LICENSE)
 
