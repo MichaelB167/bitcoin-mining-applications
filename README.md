@@ -28,6 +28,8 @@ However, the same fasciliation of near total anonymity and authentication standa
 
 <img src="http://i.imgur.com/DIWlCuJ.png?1">
 
+[This video](https://www.youtube.com/watch?v=KZKi9Q_4MnQ) gives a glimpse into the mindset of Bitcoin's more enthusiastic fanboys who were less than dissuaded by the scandal.   
+
 In short, Bitcoin has a short but wildly varied history.  Further exploring the merits of bitcoin and predicting its future are fascinating but lengthy discussions.  For our purposes, let's go under the hood to explore what a bitcoin actually is and check out the software mechanisms that produce them.
 
 ## Bitcoin components
