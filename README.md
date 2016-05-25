@@ -56,6 +56,8 @@ Nodes in this context are simply a network of machines running bitcoin software 
 
 <img src="https://j.gifs.com/pYPmAr.gif">
 
+[Another cool visualization of nodes in real time](https://bitnodes.21.co/nodes/network-map/)
+
 Each individual node records transactions, adds them to the machine's local record, and then broadcasts any changes to peer nodes across the network.  These changes are then published in a public database, which brings us to...
 
 ## Mom, where do Bitcoins come from?
@@ -91,6 +93,8 @@ And we can see an actual bit of python code that incorporates those fields to ca
 ```
 
 Since we're all python bosses now who would like to walk me through this code?  Jk :)
+
+[Blocks being built in real time](https://blocks.wizb.it/)
 
 Thanks to testing environments, we can replicate this system on a smaller scale to see what kind of operations real Bitcoin farming software carries out on a constant basis.
 
