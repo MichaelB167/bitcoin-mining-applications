@@ -32,7 +32,7 @@ In short, Bitcoin has a short but wildly varied history.  Further exploring the 
 
 ## Bitcoin components
 
-Have a look at the running transaction log on [blockchain.info](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone) and click on a transaction (this is just a popular wallet, not to be confused with the block chain data structure).  Perhaps surprisingly, you can not only see all the transactions occuring but you can see details for each one including wallet addresses and hash keys such as these which originated from Barcelona:
+Have a look at the running transaction log on [blockchain.info](https://blockchain.info/) and click on a transaction (this is just a popular wallet, not to be confused with the block chain data structure).  Perhaps surprisingly, you can not only see all the transactions occuring but you can see details for each one including wallet addresses and hash keys such as these which originated from Barcelona:
 
 address `1Ath6yhq2uoMUMXTpBot2rNRsdRYS39L2m`
 
