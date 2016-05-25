@@ -66,7 +66,31 @@ In contrast to the tree structure we've seen in class, the block chain relies on
 
 Miners/power users operate server banks which perform this operation repeatedly to consolidate transactions and verify their authenticity.  Again, this is where the peer-to-peer nature of the Bitcoin network comes in.
 
-To be accepted by the network, blocks must contain an arbitray number (nonce) that is determined by a brute force algorithm even more advanced than my tic tac toe solution.  Thanks to testing environments, we can replicate this system on a smaller scale to see what kind of operations real Bitcoin farming software carries out on a constant basis.
+To be accepted by the network, blocks must contain an arbitray number (nonce) that is determined by a brute force algorithm even more advanced than my tic tac toe game logic.  Each block header contains the following when completed:
+
+<img src="http://i.imgur.com/XQj8n5A.png">
+
+And we can see an actual bit of python code that incorporates those fields to calculate the hash of a block created in 2011:
+
+```
+>>> import hashlib
+>>> header_hex = ("01000000" +
+ "81cd02ab7e569e8bcd9317e2fe99f2de44d49ab2b8851ba4a308000000000000" +
+ "e320b6c2fffc8d750423db8b1eb942ae710e951ed797f7affc8892b0f1fc122b" +
+ "c7f5d74d" +
+ "f2b9441a" +
+ "42a14695")
+>>> header_bin = header_hex.decode('hex')
+>>> hash = hashlib.sha256(hashlib.sha256(header_bin).digest()).digest()
+>>> hash.encode('hex_codec')
+'1dbd981fe6985776b644b173a4d0385ddc1aa2a829688d1e0000000000000000'
+>>> hash[::-1].encode('hex_codec')
+'00000000000000001e8d6829a8a21adc5d38d0a473b144b6765798e61f98bd1d'
+```
+
+Since we're all python experts now who would like to walk me through this code?  Jk :)
+
+Thanks to testing environments, we can replicate this system on a smaller scale to see what kind of operations real Bitcoin farming software carries out on a constant basis.
 
 ## Lab: Create our own (test) Bitcoin mining consortium
 
@@ -116,6 +140,10 @@ Yielding a massive json string, the highlights of which are:
   ```
 
   Amount being the number of bitcoins that the user must send denominated in 10^8 BTC.  Additional documentation can be found [here](https://stripe.com/docs/api#bitcoin_receiver_object)
+
+## TL;DR
+
+Hooray bitcoin!
 
 ## Additional Resources
 
