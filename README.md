@@ -21,57 +21,45 @@ By the end of this, developers should:
 
 Bitcoin was invented by a person with the pseudonym Satoshi Nakamoto as a way to mitigate fraud in online transactions.  They postulated that the current system of relying on financial institutions as third parties to process transactions is risky because it introduces a significant need for trust between parties.  Bitcoin instead allows two parties to interact directly with each other based on cryptographic proof and records transactions in a public ledger called the 'block chain' which we'll cover momentarily.
 
-Their vision has only been partially achieved.  Bitcoin's proponents will note that its value has increased from pennies in 2012 to ~450 USD today and currently averages ~250k transactions/day.
+Their vision has only been partially achieved.  Bitcoin's proponents will note that its value has increased from pennies in 2012 to ~450 USD today and currently averages ~250k transactions/day in the largest Bitcoin wallet, Blockchain.
 
 However, the same fasciliation of near total anonymity and authentication standards that made Bitcoin successful have made it a target for crime.  The most well-known cases are probably its fascilitation of a wide variety of illegal transactions on Silk Road and the disappearance of hundreds of millions of dollars worth of Bitcoin from the servers of an exchange called Mt Gox run by this super trustworthy looking guy:
 
 <img src="http://i.imgur.com/DIWlCuJ.png?1">
 
-In short, Bitcoin has a brief but wildly varied history.  Further exploring the merits of bitcoin and predicting its future are fascinating but lengthy discussions.  For our applications, let's dive under the hood to explore the software that drives bitcoin production.
+In short, Bitcoin has a short but wildly varied history.  Further exploring the merits of bitcoin and predicting its future are fascinating but lengthy discussions.  For our purposes, let's go under the hood to explore what a bitcoin actually is and check out the software mechanisms that produce them.
 
+## Bitcoin components
 
+Have a look at the running transaction log on [blockchain.info](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone) and click on a transaction (this is just a popular wallet, not to be confused with the blockchain data structure).  Perhaps surprisingly, you can not only see all the transactions occuring but you can see details for each one including wallet addresses and hash keys such as these which originiated from Barcelona:
+
+address `1Ath6yhq2uoMUMXTpBot2rNRsdRYS39L2m`
+
+hash `6c7fd28c807427b387d5813702aa901ee7319bce`
+
+Bitcoin wallet services provide users with a free alphanumeric address that, like an ip address, gives them a unique location on the Bitcoin network.  The above hash is just the public portion of a randomly generated token similar to those we've used in generating user credentials for our projects.  If you like, you can create your own and send/receive BTC using [this sandbox wallet](https://sandbox.coinbase.com/)
+
+At it's essence, bitcoin is a digital file that is structured with key value pairs (names and amounts) that are updated when a transaction occurs.
+
+However, such a transaction isn't local to one user or machine.  We can see all transaction addresses/hashes because 'Power users' who provide bitcoin mining services all maintain a copy of this file, and they are all updated accordingly when BTC changes holders.  Who are these power users?  To answer that, we need to delve into Bitcoin nodes and the Blockchain.
+
+## Bitcoin Nodes
+
+Nodes in this context are simply a network of machines running bitcoin software that broadcast transaction updates to other nodes .  To help visualize that process, check out this gif of a node connecting to the bitcoin network in real time (the origin node is the first green sphere):
 
 <img src="https://j.gifs.com/pYPmAr.gif">
-
-## What's the Blockchain?
 
 
 
 ## Demo: Write a Demo
 
-Demos are demonstrations, and developers should give their full attention to
-them. It's a great time for them to take notes about important concepts before
-applying them in an exercise.
 
-Demos correspond to the "I do" portion of scaffolding from consultant trainging.
 
 ## Exercise: Write an Exercise
 
-During exercises, developers should apply concepts covered in the previous demo.
-This is their first chance to generalize concepts introduced. Exercises should
-be very focused, and flow natural into a lab.
 
-Exercises correspond to the "We do" portion of scaffolding from consultant
-trainging.
 
 ## Lab: Write a Lab
-
-During labs, developers get to demonstrate their understanding of concepts from
-demos and applied knowledge from exercises. Labs are an opportunity for
-developers to build confidence, and also serve as a diagnostic tool for
-consultants to evaluate developer understanding.
-
-Labs should be timed explicitly using a timer. When estimating the time it will
-take to complete a lab, it is better to overestimate. During labs, consultants
-should circle the room and interact with developers, noting patterns and
-prompting with hints on how to complete the lab. If developers end early, a
-consultant may stop the lab timer. If developers do not finish in time, a
-consultant may give more time at her discretion based on current talk pace, the
-current estimate for the talk, and the importance of completing the lab while
-consultant support is available.
-
-Labs correspond to the "You do" portion of scaffolding from consultant
-trainging.
 
 ## TL;DR
 
@@ -85,7 +73,6 @@ trainging.
     tools tangentially used but not part of the focus of the talk, are also
     appropriate.
 
-[^fn-sample_footnote]: Handy! Now click the return link to go back.
 
 ## [License](LICENSE)
 
