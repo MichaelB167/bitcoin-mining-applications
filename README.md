@@ -6,7 +6,7 @@ Everyone has heard of bitcoin and some of you have probably made transactions us
 
 About a year ago, I was talking with a friend and trying to explain why I felt confident having myself invested in it.  I understood the basic principles of how it operated as a digital currency, but as I tried explaining even the basics of encryption and the mining process all that was coming out was the bitcoin equivalent of Ruby Magic.
 
-This talk will compile the bits and pieces I've learned since then to answer the above, as well as go into a bit more detail on how bitcoin relates to subjects we've covered in class such as cs data structures and network funcionality.
+This talk will compile the bits and pieces I've learned since then to answer the above, as well as go into a bit more detail on how bitcoin relates to subjects we've covered in class such as cs data structures and authentication/cryptology.
 
 ## Objectives
 
@@ -38,7 +38,7 @@ address `1Ath6yhq2uoMUMXTpBot2rNRsdRYS39L2m`
 
 hash `6c7fd28c807427b387d5813702aa901ee7319bce`
 
-Bitcoin wallet services provide users with a free alphanumeric address that, like an ip address, gives them a unique location on the Bitcoin network.  The above hash is just the public portion of a randomly generated token similar to those we've used in generating user credentials for our projects.  If you like, you can create your own and send/receive BTC using [this sandbox wallet](https://sandbox.coinbase.com/).
+Bitcoin wallet services provide users with a free alphanumeric address that, like an ip address, gives them a unique location on the Bitcoin network.  The above hash is just the public portion of a randomly generated token similar to those we've used in generating user credentials for our projects.  If you like, later on you can create your own and send/receive BTC using [this sandbox wallet](https://sandbox.coinbase.com/).
 
 To complete a transaction, the payer of the Bitcoin being transferred must provide their own private key to ensure validation:
 
@@ -88,7 +88,7 @@ And we can see an actual bit of python code that incorporates those fields to ca
 '00000000000000001e8d6829a8a21adc5d38d0a473b144b6765798e61f98bd1d'
 ```
 
-Since we're all python experts now who would like to walk me through this code?  Jk :)
+Since we're all python bosses now who would like to walk me through this code?  Jk :)
 
 Thanks to testing environments, we can replicate this system on a smaller scale to see what kind of operations real Bitcoin farming software carries out on a constant basis.
 
@@ -98,6 +98,7 @@ Thanks to testing environments, we can replicate this system on a smaller scale 
 1.  Run `bitcoind -regtest -daemon` which should yield 'bitcoin server starting'
 1.  Set bitcoind to testing mode with `bitcoin-cli -regtest setgenerate true 101`
 1.  Verify balance with `bitcoin-cli -regtest getbalance`- you should have 50 bitcoin available.
+1.  Again follow along on screen to connect to my test node
 
 ## Project Integration
 
