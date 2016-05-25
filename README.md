@@ -149,6 +149,7 @@ Hooray bitcoin!
 ## Additional Resources
 
 -   Original bitcoin whitepaper- https://bitcoin.org/bitcoin.pdf
+-   Fascinating vice video on a Chinese bitcoin mine http://motherboard.vice.com/read/chinas-biggest-secret-bitcoin-mine
 -   Stripe docs for bitcoin payment integration https://stripe.com/docs/bitcoin
 -   Test wallet https://sandbox.coinbase.com/
 -   Create a test mining environment on your machine https://github.com/bitcoin/bitcoin (beware, this download is enormous)
