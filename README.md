@@ -4,7 +4,7 @@
 
 Everyone has heard of bitcoin and some of you have probably made transactions using it, maybe as a payment method or a speculative investment.
 
-About a year ago, I was talking with a friend and trying to explain why I felt confident having myself invested in it.  I understood the basic principles of how it operated as a digital currency, but as I tried explaining even the basics of encryption and the mining process all that was coming out was the bitcoin equivalent of Ruby Magic.
+About a year ago, I was talking with a friend and trying to explain why I felt reasonably confident having myself invested in it.  I understood the basic principles of how it operated as a digital currency, but as I tried explaining even the basics of encryption and the mining process all that was coming out was the bitcoin equivalent of Ruby Magic.
 
 This talk will compile the bits and pieces I've learned since then to answer the above, as well as go into a bit more detail on how bitcoin relates to subjects we've covered in class such as cs data structures and authentication/cryptology.
 
