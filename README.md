@@ -22,7 +22,7 @@ By the end of this, developers should:
 
 Bitcoin was invented by a person with the pseudonym Satoshi Nakamoto as a way to mitigate fraud in online transactions.  They postulated that the current system of relying on financial institutions as third parties to process transactions is risky because it introduces a significant need for trust between parties.  Bitcoin instead allows two parties to interact directly with each other based on cryptographic proof and records transactions in a public ledger called the 'block chain' which we'll cover momentarily.
 
-Their vision has only been partially achieved.  Bitcoin's proponents will note that its value has increased from pennies in 2012 to ~450 USD today and currently averages ~250k transactions/day in the largest Bitcoin wallet, Blockchain.
+Their vision has only been partially achieved.  Bitcoin's proponents will note that its value has increased from pennies in 2012 to ~450 USD today and currently averages ~250k transactions/day in one of the larger Bitcoin wallets, Blockchain.
 
 However, the same fasciliation of near total anonymity and authentication standards that made Bitcoin successful have made it a target for crime.  The most well-known cases are probably its fascilitation of a wide variety of illegal transactions on Silk Road and the disappearance of hundreds of millions of dollars worth of Bitcoin from the servers of an exchange called Mt Gox run by this super trustworthy looking guy:
 
@@ -58,13 +58,13 @@ Each individual node records transactions, adds them to the machine's local reco
 
 ## What is the block chain?
 
-The block chain is a public ledger/database which is operated on by the aforementioned nodes.  Remember when you almost had your university credentials rescinded for torrenting Wings of Liberty without a vpn on the school network?  Bitcoin works in a similar capacity, albeit by providing tangible financial rewards for providing peer-to-peer mining services.
+The block chain is a public ledger/database which is operated on by the aforementioned nodes.  Remember when you almost had your university credentials rescinded for torrenting Wings of Liberty without a vpn on the school network?  Bitcoin works in a similar capacity, albeit by providing tangible financial rewards (bitcoins) for providing peer-to-peer mining services.
 
 In contrast to the tree structure we've seen in class, the block chain relies on a structure called the merkle/hash tree which recursively hashes nodes together until they are consolidated into one.
 
 <img src="http://i.imgur.com/GCvX5Jh.png?1  ">
 
-Miners/power users operate server banks which perform this operation repeatedly to consolidate transactions and verify their authenticity.  Again, this is where the peer-to-peer nature of the Bitcoin network comes in.
+Miners/power users operate server banks which perform this operation repeatedly to consolidate transactions and verify their authenticity.  Again, this is where the peer-to-peer nature of the Bitcoin network comes in.  Every time a hash is created and miners provide validation for the transactions they recieve, they also get 25 bitcoins.  The block chain is then globally updated and the process starts over.
 
 To be accepted by the network, blocks must contain an arbitray number (nonce) that is determined by a brute force algorithm even more advanced than my tic tac toe game logic.  Each block header contains the following when completed:
 
@@ -131,7 +131,7 @@ curl https://api.stripe.com/v1/bitcoin/receivers \
    -d description="Receiver for John Doe" \
    -d email="test@example.com"
 ```
-Yielding a massive json string, the highlights of which are:
+Yielding a massive json object, the highlights of which are:
 
 ```
 "bitcoin_amount": 1757908,
