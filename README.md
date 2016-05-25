@@ -4,7 +4,7 @@
 
 Everyone has heard of bitcoin and some of you have probably made transactions using it, maybe as a payment method or a speculative investment.
 
-About a year ago, I was talking with a friend and trying to explain why I felt confident having myself invested in it.  I understood the basic principles of how it operated as a digital currency, but as I tried explaining even the basics of encryption and the mining process all that was coming out was the bitcoin equivalent of 'webscale bro'.
+About a year ago, I was talking with a friend and trying to explain why I felt confident having myself invested in it.  I understood the basic principles of how it operated as a digital currency, but as I tried explaining even the basics of encryption and the mining process all that was coming out was the bitcoin equivalent of Ruby Magic.
 
 This talk will compile the bits and pieces I've learned since then to answer the above, as well as go into a bit more detail on how bitcoin relates to subjects we've covered in class such as cs data structures and network funcionality.
 
@@ -70,6 +70,11 @@ To be accepted by the network, blocks must contain an arbitray number (nonce) th
 
 ## Lab: Create our own (test) Bitcoin mining consortium
 
+1.  Follow along to configure bitcoind
+1.  Run `bitcoind -regtest -daemon` which should yield 'bitcoin server starting'
+1.  Set bitcoind to testing mode with `bitcoin-cli -regtest setgenerate true 101`
+1.  Verify balance with `bitcoin-cli -regtest getbalance`- you should have 50 bitcoin available.
+
 ## Project Integration
 
 If you want to enable bitcoin payments in your web app, stripe provides useful tools for doing so.  First, create a checkout handler/event such as-
@@ -111,8 +116,6 @@ Yielding a massive json string, the highlights of which are:
   ```
 
   Amount being the number of bitcoins that the user must send denominated in 10^8 BTC.  Additional documentation can be found [here](https://stripe.com/docs/api#bitcoin_receiver_object)
-
-## TL;DR
 
 ## Additional Resources
 
