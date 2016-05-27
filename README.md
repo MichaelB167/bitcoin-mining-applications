@@ -60,7 +60,7 @@ Nodes in this context are simply a network of machines running bitcoin software 
 
 Each individual node records transactions, adds them to the machine's local record, and then broadcasts any changes to peer nodes across the network.  These changes are then published in a public database, which brings us to...
 
-## Mom, where do Bitcoins come from?
+## Where do Bitcoins come from?
 
 The block chain is a public ledger/database which is operated on by the aforementioned nodes.  Remember when you almost had your university credentials rescinded for torrenting Wings of Liberty without a vpn on the school network?  Bitcoin works in a similar capacity, albeit by providing tangible financial rewards (bitcoins) for providing peer-to-peer mining services.
 
